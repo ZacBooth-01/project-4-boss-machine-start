@@ -16,9 +16,6 @@ app.use(cors())
 app.use(bodyParser.json())
 
 // Mount your existing routers below at the '/api' path.
-const { query } = require('express');
-const e = require('express');
-const { fa } = require('faker/lib/locales');
 const minionsRouter = require('./server/minions')
 const ideasRouter = require('./server/ideas');
 const meetingsRouter = require('./server/meetings');
